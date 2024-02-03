@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <title>E-Commerce Store</title>
     <style>
+       <style>
         /* Add your CSS styles here for styling */
         body {
             font-family: Arial, sans-serif;
@@ -13,91 +15,80 @@
             background-color: #f4f4f4;
         }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        article {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        .move {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .page-number {
+            margin: 10px;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-        }
-.PGname {
-    text-align: center;
+        img.gen {
+   transition: transform;
 }
-
-main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        article {
-            width: 300px;
-            margin: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            background-color: #fff;
-            text-align: center;
-        }
-footer {
-    
-}
-.back{
-            text-decoration: none;
-            display: inline-block;
-            margin: 2px;
-            padding-left: 45%;
-        }
-.next{
-            text-decoration: none;
-            display: inline-block;
-            margin: 2px;
-            padding-right: 45%;
-        }
-.page-number {
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px;
-        }
-.move {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-}
-.Cart {
-    text-decoration: none;
-    display: inline-block;
-    margin: 2px;
-    padding-left: 15px;
-}
-.Home {
-    text-decoration: none;
-    display: inline-block;
-    margin: 2px;
-    padding-left: 5px;
-}
-
-.gen {
-   
-}
-img.gen {
-            transition: transform 0.3s ease-in-out;
-            border-radius: 15px;
-        }
-img.gen:hover{
+        img.gen:hover{
     transform: scale(1.2);
 }
+        img{
+            border-radius: 15px;
+        }
         /* Add more styles as needed */
     </style>
 </head>
