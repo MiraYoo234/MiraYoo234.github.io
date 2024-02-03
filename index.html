@@ -13,12 +13,20 @@
             background-color: #f4f4f4;
         }
 
-        header, footer {
+        footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em;
         }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+        }
+.PGname {
+    text-align: center;
+}
 
         main {
             padding: 21px;
@@ -63,16 +71,30 @@ footer {
     align-items: center;
     display: flex;
 }
+.Cart {
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px;
+    padding-left: 15px;
+}
+.Home {
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px;
+    padding-left: 5px;
+}
         /* Add more styles as needed */
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Nayn Min Htet's E-Commerce Store</h1>
+        <h1 class="PGname">Nayn Min Htet's E-Commerce Store</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Cart</a>
+            <a class="Home" href="#"><img src="./photos/home - Copy.ico">Home</a>
+            <a class="Cart" href="#"><img src="./photos/shopping-cart .ico">Cart</a>
+            
+            
         </nav>
     </header>
 
