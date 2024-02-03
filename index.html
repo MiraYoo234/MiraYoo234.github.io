@@ -28,9 +28,13 @@
     text-align: center;
 }
 
-        main {
-            padding: 21px;
+main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
+
 
         section {
             display: flex;
@@ -83,6 +87,17 @@ footer {
     margin: 2px;
     padding-left: 5px;
 }
+
+.gen {
+   
+}
+img.gen {
+            transition: transform 0.3s ease-in-out;
+            border-radius: 15px;
+        }
+img.gen:hover{
+    transform: scale(1.2);
+}
         /* Add more styles as needed */
     </style>
 </head>
@@ -101,26 +116,13 @@ footer {
     <!-- Main Content Section -->
     <main>
         <!-- Product Listings -->
-        <section>
+        <section class="sec">
             <!-- Product 1 -->
-            <article>
-                <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 1">
-                <h2>Mobile(Andriod)</h2>
-                <p>We have a wide range of<br>andorid phones.</p>
-               <a href="#"><button>Buy Now!!</button></a>
-            </article>
-
-            <!-- Product 2 -->
-            <article>
-                <img src="./photos/sirin.png" width="200" height="100" alt="Product 2">
-                <h2>IOS</h2>
-                <p>APPLE Products</p>
-                <a href="#"><button>Buy Now!!</button></a>
-            </article>
+            
 
             <!-- Product 3 -->
             <article>
-                <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 3">
+                <img src="./photos/genshin.png" width="80" height="70" class = "gen" alt="Product 3">
                 <h2>Genshin Impact Guide</h2>
                 <p>We are updating daily!</p>
                 <button>Guide</button>
@@ -129,27 +131,55 @@ footer {
             <!-- Add more product articles as needed -->
 
             <article>
-                <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 1">
+                <img src="./photos/kiana.png" width="80" height="70" class="gen" alt="Product 1">
                 <h2>Honkai Impact 3RD Guide</h2>
                 <p>We are updating daily</p>
                 <button>Guide</button>
             </article>
 
             <article>
-                <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 1">
+                <img src="./photos/zzz.png" width="90" height="80" class="gen" alt="Product 1">
                 <h2>Zenless Zone Zero Guide</h2>
                 <p>Stay Tuned!</p>
                 <button>Comingsoon.!</button>
             </article>
 
             <article>
-                <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 1">
+                <img src="./photos/starrail.png" width="90" height="80" class="gen" alt="Product 1">
                 <h2>Honkai Star Rail Guide</h2>
                 <p>We are updating daily</p>
                 <button>Guide</button>
             </article>
 
+            <article>
+                <img src="./photos/smartphone.png" width="100" height="70" class="gen" alt="Product 1">
+                <h2>Mobile(Andriod)</h2>
+                <p>We have a wide range of<br>andorid phones.</p>
+               <a href="#"><button>Buy Now!!</button></a>
+            </article>
 
+            <!-- Product 2 -->
+            <article>
+                <img src="./photos/apple.png" width="80" height="70" class="gen" alt="Product 2">
+                <h2>IOS</h2>
+                <p>APPLE Products</p>
+                <a href="#"><button>Buy Now!!</button></a>
+            </article>
+
+            <article>
+                <img src="./photos/smartphone.png" width="100" height="70" class="gen" alt="Product 1">
+                <h2>Mobile(Andriod)</h2>
+                <p>We have a wide range of<br>andorid phones.</p>
+               <a href="#"><button>Buy Now!!</button></a>
+            </article>
+
+            <!-- Product 2 -->
+            <article>
+                <img src="./photos/apple.png" width="80" height="70" class="gen" alt="Product 2">
+                <h2>IOS</h2>
+                <p>APPLE Products</p>
+                <a href="#"><button>Buy Now!!</button></a>
+            </article>
         </section>
     </main>
     
