@@ -41,11 +41,27 @@
 footer {
     
 }
-.back {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40%;
-    
+.back{
+            text-decoration: none;
+            display: inline-block;
+            margin: 2px;
+            padding-left: 45%;
+        }
+.next{
+            text-decoration: none;
+            display: inline-block;
+            margin: 2px;
+            padding-right: 45%;
+        }
+.page-number {
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+.move {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
         /* Add more styles as needed */
     </style>
@@ -83,45 +99,44 @@ footer {
             <!-- Product 3 -->
             <article>
                 <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 3">
-                <h2>Zin Myo</h2>
-                <p>Moe Pa Pa</p>
-                <button>Love Now!!</button>
+                <h2>Genshin Impact Guide</h2>
+                <p>We are updating daily!</p>
+                <button>Guide</button>
             </article>
 
             <!-- Add more product articles as needed -->
 
             <article>
                 <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 1">
-                <h2>Sithu Phyo</h2>
-                <p>Kyal Gyi</p>
-                <p>Crying</p>
-                <button>Cry now!!</button>
+                <h2>Honkai Impact 3RD Guide</h2>
+                <p>We are updating daily</p>
+                <button>Guide</button>
             </article>
 
             <article>
                 <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 1">
-                <h2>Min Khat Kyaw</h2>
-                <p>$ FA</p>
-                <button>Cry!</button>
+                <h2>Zenless Zone Zero Guide</h2>
+                <p>Stay Tuned!</p>
+                <button>Comingsoon.!</button>
             </article>
 
             <article>
                 <img src="./photos/seele_HRB.png" width="200" height="100" alt="Product 1">
-                <h2>Aung Ye Htet</h2>
-                <p>BOE BOE Aung</p>
-                <button>Buy!!</button>
+                <h2>Honkai Star Rail Guide</h2>
+                <p>We are updating daily</p>
+                <button>Guide</button>
             </article>
 
 
         </section>
     </main>
-    <div>
-<nav>
-    <a href="https://wallpaperscraft.com/catalog/anime/downloads" class="back"><button>
-        &lt;
-                                                                               </button>
-    </a>
-    </div>
+    
+<nav class="move">
+    
+    <a href="https://wallpaperscraft.com/catalog/anime/downloads" class="back"><button>&lt;</button></a>
+    <span class="page-number">page-1</span>
+    <a href="https://www.youtube.com/" class="next"><button>&gt;</button></a>
+    
 </nav>
 <div>
     <!-- Footer Section -->
