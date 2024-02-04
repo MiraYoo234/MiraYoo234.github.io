@@ -5,13 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honkai Impact 3rd Character List</title>
     <style>
+        
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
         }
-        button {
-            margin-top: 10px;
+
+        .body {
+            padding: 20px;
         }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        article {
+            border: 1px solid #ddd;
+            display: inline-block;
+            background-color: #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        figure {
+            margin: 0;
+        }
+
         .move {
             justify-content: space-between;
             align-items: center;
@@ -19,20 +49,30 @@
             width: 100%;
             padding: 10px;
             box-sizing: border-box;
+            background-color: #333;
         }
 
-        h1 {
-            color: #FF69B4;
+        .move a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
         }
-        .header {
-            background-color: black;
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
+
+        button {
+            font-size: 16px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
         }
-        .body {
-            padding-top: 10px;
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
+    
         figcaption {
             text-align: center;
             color: black;
@@ -103,6 +143,26 @@
             border: 1px solid black;
             display: inline-block;
             background-image: linear-gradient(antiquewhite, rgb(101, 0, 242));
+        }
+        article.Durendal {
+            border: 1px solid black;
+            display: inline-block;
+            background-image: linear-gradient(antiquewhite, rgb(193, 193, 193));
+        }
+        article.Asuka {
+            border: 1px solid black;
+            display: inline-block;
+            background-image: linear-gradient(antiquewhite, rgb(240, 240, 78));
+        }
+        article.Fischl {
+            border: 1px solid black;
+            display: inline-block;
+            background-image: linear-gradient(antiquewhite, rgb(240, 240, 78));
+        }
+        article.Elysia {
+            border: 1px solid black;
+            display: inline-block;
+            background-image: linear-gradient(antiquewhite, rgb(243, 20, 146));
         }
     </style>
 </head>
@@ -191,10 +251,44 @@
                 </figure></a>
             </article>
 
-            
+            <article class="Seele">
+                <a href="./kiana.html"><figure>
+                <img src="./photos/Stygian_Nymph.webp" width="100" height="150">
+                <figcaption>Seele</figcaption>
+                </figure></a>
+            </article>
+
+            <article class="Durendal">
+                <a href="https://honkaiimpact3.fandom.com/wiki/Herrscher_of_the_Void"><figure>
+                <img src="./photos/Palatinus_Equinox.webp" width="100" height="150">
+                <figcaption>Durendal</figcaption>
+                </figure></a>
+            </article>
+
+            <article class="Asuka">
+                <a href="https://honkaiimpact3.fandom.com/wiki/Herrscher_of_the_Void"><figure>
+                <img src="./photos/Blazing_Hope.webp" width="100" height="150">
+                <figcaption>Asuka</figcaption>
+                </figure></a>
+            </article>
+
+            <article class="Fischl">
+                <a href="https://honkaiimpact3.fandom.com/wiki/Herrscher_of_the_Void"><figure>
+                <img src="./photos/Fischl.webp" width="100" height="150">
+                <figcaption>Fischl</figcaption>
+                </figure></a>
+            </article>
+
+            <article class="Elysia">
+                <a href="https://honkaiimpact3.fandom.com/wiki/Herrscher_of_the_Void"><figure>
+                <img src="./photos/Herrscher_of_Human_-_Ego.webp" width="100" height="150">
+                <figcaption>Elysia</figcaption>
+                </figure></a>
+            </article>
+
 
             <nav class="move">
-                <a href="https://wallpaperscraft.com/catalog/anime/downloads" class="back"><button>&lt;</button></a>
+                <a href="#" class="back"><button>&lt;</button></a>
                 <span class="page-number">page-1</span>
                 <a href="./hi3home2.html" class="next"><button>&gt;</button></a>
                 
