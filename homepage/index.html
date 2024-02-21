@@ -12,17 +12,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #4200a5;
         }
 
-        .top {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-            justify-content: space-between;
-            align-items: center;
-        }
+        
 
         nav {
             text-align: center;
@@ -55,7 +48,7 @@
             margin: 10px;
             padding: 15px;
             border: 1px solid #ddd;
-            background-color: #fff;
+            background-color: #ffffff;
             text-align: center;
         }
 
@@ -91,15 +84,7 @@
         img{
             border-radius: 15px;
         }
-        .profile {
-           
-            width: 70px;
-            height: 70px;
-            display: inline-block;
-            position: absolute;
-            right: 90%;
-            top: 4%;
-        }
+        
         .p3 {
             border-radius: 1px;
         }
@@ -107,22 +92,53 @@
             display: inline-block;
            
         }
-        .PGname {
-            
-            align-items: center;
-        }
-        /* Add more styles as needed */
+        .top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #660fe8; /* Set the desired background color */
+        z-index: 1000; /* Set a high z-index to ensure it appears above other elements */
+        padding: 10px; /* Adjust the padding as needed */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .PGname {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        display: inline-block;
+    }
+
+    .profile {
+        margin-left: 10px; /* Adjust the margin as needed */
+        width: 50px; /* Set the desired width for the profile image */
+        height: 50px; /* Set the desired height for the profile image */
+        border-radius: 50%; /* Optional: Make the profile image round */
+        padding-right: 20px;
+    }
+    .main {
+        padding-top: 60px;
+    }
+    .gpro {
+        
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
     </style>
 </head>
 <body>
     <!-- Header Section -->
-    <nav class="top">
-        <h1 class="PGname">APP Store<img src="./photos/My Own Logo.png" class="profile"></h1>
-        
-    </nav>
+    
+    <div class="top">
+        <img src="./photos/gamer.png" class="profile"><h1 class="PGname">Game Store</h1><img src="./photos/gamer.png" class="gpro">
+    </div>
 
     <!-- Main Content Section -->
     <main>
+        <div class="main">
         <!-- Product Listings -->
         <section class="sec">
             <!-- Product 1 -->
@@ -162,9 +178,9 @@
 
             <article>
                 <img src="./photos/zzz.png" width="90" height="80" class="gen" alt="Product 1">
-                <h2>Zenless Zone Zero Guide</h2>
-                <p>Stay Tuned!</p>
-                <button>Comingsoon.!</button>
+                <h2>PC</h2>
+                <p>We have a wide range of PC games</p>
+                <a href="../new homepage/index.html"><button>Download Now</button></a>
             </article>
 
             <article>
@@ -195,7 +211,7 @@
             </article>
         </section>
     </main>
-    
+</div>
 <nav class="move">
     
     <a href="https://wallpaperscraft.com/catalog/anime/downloads" class="back"><button>&lt;</button></a>
