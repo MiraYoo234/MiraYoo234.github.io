@@ -80,6 +80,7 @@
             padding: 20px;
             background: linear-gradient(rgb(217, 7, 214), blue);
             color: white;
+            box-shadow: 0px 2px 5px black;
         }
 
         .outdown {
@@ -179,6 +180,89 @@
             width: 100%;
             height: auto;
         }
+        .first_div {
+            width:auto;
+        }
+        @media only screen and (max-width: 600px) {
+    /* Adjustments for mobile devices */
+    .top {
+        padding: 5px;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    .toplink {
+        padding: 5px;
+    }
+
+    .free {
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .search-container {
+        margin: 10px;
+    }
+
+    .fr {
+        padding: 3px;
+    }
+
+    .holder {
+        margin-right: 10px;
+    }
+
+    .game1 {
+        padding-top: 20px;
+    }
+
+    .outriders {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .outtext {
+        padding: 10px;
+    }
+
+    .control td {
+        padding: 5px;
+    }
+
+    .allgame {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .allgame1 {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .container, .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Action, .horror {
+        width: 100%;
+    }
+
+    .image {
+        height: auto;
+    }
+
+    .cat {
+        margin-top: 10px;
+        padding: 15px;
+    }
+}
+.Popular {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px black;
+}
     </style>
 </head>
 <body>
@@ -217,7 +301,7 @@
     </div>
 
     
-    <div>
+    <div class="first_div">
         <table class="allgame1">
             <tr>
                 <td class="allgame2">Popular Games</td>
@@ -229,14 +313,16 @@
     <div class="controldiv">
         <table class="control">
             <tr>
-                <td><a href="#"><img src="./photo/control.png"></a></td>
-                <td><a href="#"><img src="./photo/horizon - Copy.png"></a></td>
-                <td><a href="#"><img src="./photo/god of war - Copy.png"></a></td>
+                
+                <td><div class="Popular"><a href="#"><img src="./photo/control.png"></a></div></td>
+                <td><div class="Popular"><a href="#"><img src="./photo/horizon_forbidden_west.jpeg" width="480" height="270"></a></div></td>
+                <td><div class="Popular"><a href="#"><img src="./photo/god of war - Copy.png"></a></div></td>
+            
             </tr>
         </table>
     </div>
 
-    <div>
+    <div class="first_div">
         <p class="cat">Categories</p>
     </div>
 
@@ -249,6 +335,7 @@
                     </tr>
                     <tr>
                         <td>
+                            <a href="#">
                             <div id="container">
                                 <img class="image" src="./photo/god of war.png" alt="Image 1">
                                 <img class="image" src="./photo/horizon.png" alt="Image 2">
@@ -256,6 +343,7 @@
                                 <img class="image" src="./photo/sekiro.png" alt="Image 3">
                                 <img class="image" src="./photo/valhalla.png" alt="Image 3">
                             </div>
+                        </a>
                         </td>
                     </tr>
                 </table>
@@ -270,6 +358,7 @@
                     </tr>
                     <tr>
                         <td>
+                            <a href="#">
                             <div id="container">
                                 <img class="image" src="./photo/alan-wake-2.jpg" alt="Image 1">
                                 <img class="image" src="./photo/outlast.png" alt="Image 2">
@@ -277,6 +366,7 @@
                                 <img class="image" src="./photo/the_last_of_us.png" alt="Image 2">
                                 <img class="image" src="./photo/homesweethome.png" alt="Image 2">
                             </div>
+                        </a>
                         </td>
                     </tr>
                 </table>
@@ -291,6 +381,7 @@
                     </tr>
                     <tr>
                         <td>
+                            <a href="#">
                             <div id="container">
                                 <img class="image" src="./photo/mhw.jpg" alt="Image 1">
                                 <img class="image" src="./photo/nier_automata.jpg" alt="Image 2">
@@ -298,6 +389,7 @@
                                 <img class="image" src="./photo/cyberpunk.jpg" alt="Image 2">
                                 <img class="image" src="./photo/eldenring.jpg" alt="Image 2">
                             </div>
+                        </a>
                         </td>
                     </tr>
                 </table>
@@ -312,6 +404,7 @@
                     </tr>
                     <tr>
                         <td>
+                            <a href="#">
                             <div id="container">
                                 <img class="image" src="./photo/minecraft.png" alt="Image 1">
                                 <img class="image" src="./photo/no_man's_sky.jpg" alt="Image 2">
@@ -319,6 +412,7 @@
                                 <img class="image" src="./photo/DayZ.jpg" alt="Image 2">
                                 <img class="image" src="./photo/rust.jpg" alt="Image 2">
                             </div>
+                        </a>
                         </td>
                     </tr>
                 </table>
@@ -327,28 +421,102 @@
 
         
     </div>
-<div class="container2">
-    <div class="horror">
-        <article class="ar2">
-            <table>
-                <tr>
-                    <th>Survival</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="container">
-                            <img class="image" src="./photo/minecraft.png" alt="Image 1">
-                            <img class="image" src="./photo/no_man's_sky.jpg" alt="Image 2">
-                            <img class="image" src="./photo/palworld.jpg" alt="Image 2">
-                            <img class="image" src="./photo/DayZ.jpg" alt="Image 2">
-                            <img class="image" src="./photo/rust.jpg" alt="Image 2">
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </article>
-    </div>
-</div>
+    <div class="container2">
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Shooter</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                            <img class="image" src="./photo/far_cry_4.jpg" alt="Image 1">
+                            <img class="image" src="./photo/far_cry_5.jpg" alt="Image 2">
+                            <img class="image" src="./photo/far_cry_6.jpg" alt="Image 2">
+                            <img class="image" src="./photo/cod_warzone.jpg" alt="Image 2">
+                            <img class="image" src="./photo/pubg.jpg" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    
 
+    
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Racing</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                            <img class="image" src="./photo/forza_5.jpg" alt="Image 1">
+                            <img class="image" src="./photo/need_for_speed_heat.jpg" alt="Image 2">
+                            <img class="image" src="./photo/rally.png" alt="Image 2">
+                            <img class="image" src="./photo/the_crew_mortor_feast.png" alt="Image 2">
+                            <img class="image" src="./photo/nfs_unbound.jpg" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Adventure</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                            <img class="image" src="./photo/stray.jpg" alt="Image 1">
+                            <img class="image" src="./photo/hogwart.jpg" alt="Image 2">
+                            <img class="image" src="./photo/star_field.jpg" alt="Image 2">
+                            <img class="image" src="./photo/bioshock.jpg" alt="Image 2">
+                            <img class="image" src="./photo/life_is_strange.png" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Anime</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                            <img class="image" src="./photo/genshin.jpg" alt="Image 1">
+                            <img class="image" src="./photo/honkai.jpg" alt="Image 2">
+                            <img class="image" src="./photo/star_rail.jpg" alt="Image 2">
+                            <img class="image" src="./photo/pgr.jpg" alt="Image 2">
+                            <img class="image" src="./photo/zzz.jpg" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
