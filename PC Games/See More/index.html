@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+/*<---Whatever you do, "Don't Touch the CSS."---> */
+/*<---Only God and I know how these shits even work.--->*/
+/*<---This shit is working, so, don't touch.--->*/
+            /*<---By (Nyan Min Htet)--->*/
+
+        body {
+            background-color: rgb(198, 198, 198);
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #660fe8;
+            z-index: 1000;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .logo {
+            padding-left: 20px;
+        }
+
+        .toplink {
+            text-decoration: none;
+            color: white;
+        }
+
+        .free {
+            text-decoration: none;
+            color: white;
+            border: 1px solid violet;
+            border-bottom-right-radius: 20px;
+        }
+
+        .search-container {
+            margin: 20px;
+        }
+
+        .fr {
+            padding-top: 5px;
+            padding-bottom: 2px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .holder {
+            padding-right: 50px;
+        }
+
+        .game1 {
+            padding-top: 80px;
+        }
+
+        .outriders {
+            padding-left: 80px;
+            padding-right: 1200px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 1px solid rgb(0, 0, 0);
+            background: url(./photo/wall.png) center/cover no-repeat;
+            color: white;
+            box-shadow: 0px 2px 5px black;
+        }
+
+        .outtext {
+            border: 1px solid black;
+            text-align: center;
+            border-bottom-right-radius: 20px;
+            padding: 20px;
+            background: linear-gradient(rgb(217, 7, 214), blue);
+            color: white;
+            box-shadow: 0px 2px 5px black;
+        }
+
+        .outdown {
+            text-decoration: none;
+        }
+
+        .control td {
+            padding-right: 10px;
+            padding-left: 14px;
+        }
+        .control td {
+            padding-top: 20px;
+        }
+
+        .controldiv {
+            margin-top: 20px;
+        }
+
+        .allgame {
+            padding-left: 1370px;
+        }
+
+        .allgame1 {
+            margin-top: 20px;
+            border: 2px solid rgb(159, 157, 157);
+            background-color: rgb(165, 165, 165);
+            box-shadow: 0px 2px 5px black;
+            border-radius: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+
+        .Action {
+            border: 1px solid rgb(203, 202, 202);
+            background-color: rgb(221, 220, 220);
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px black;
+
+        }
+
+        .ar1, .ar2 {
+            width: 100%;
+        }
+
+        #container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            width: 300px;
+            margin: 20px auto;
+        }
+        .container img {
+            height: 170px;
+        }
+        .container2 img {
+            height: 170px;
+            
+        }
+
+        .image {
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+            width: 100%;
+            height: auto;
+        }
+
+        .cat {
+            margin-top: 20px;
+            padding: 25px;
+            border: 2px solid gray;
+            box-shadow: 0px 2px 5px black;
+            border-radius: 20px;
+            background-color: rgb(165, 165, 165);
+        }
+
+        
+
+        .horror {
+            display: inline-block;
+            border: 1px solid rgb(203, 202, 202);
+            background-color: rgb(221, 220, 220);
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px black;
+
+        }
+
+        .image-link {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .first_div {
+            width:auto;
+        }
+        @media only screen and (max-width: 600px) {
+    /* Adjustments for mobile devices */
+    .top {
+        padding: 5px;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    .toplink {
+        padding: 5px;
+    }
+
+    .free {
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .search-container {
+        margin: 10px;
+    }
+
+    .fr {
+        padding: 3px;
+    }
+
+    .holder {
+        margin-right: 10px;
+    }
+
+    .game1 {
+        padding-top: 20px;
+    }
+
+    .outriders {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .outtext {
+        padding: 10px;
+    }
+
+    .control td {
+        padding: 5px;
+    }
+
+    .allgame {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .allgame1 {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .container, .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Action, .horror {
+        width: 100%;
+    }
+
+    .image {
+        height: auto;
+    }
+
+    .cat {
+        margin-top: 10px;
+        padding: 15px;
+    }
+}
+.Popular {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px black;
+}
+    </style>
+</head>
+<body>
+
+    <nav class="top">
+        <img src="../homepage/photos/apple.png" width="64" height="64" class="Logo">
+        <a href="#" class="toplink"><p>Preorder</p></a>
+        <a href="#" class="toplink"><p>Hot News</p></a>
+        <a href="#" class="toplink"><p>New Releases</p></a>
+        <a href="#" class="free"><p class="fr">Free Games</p></a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+        <div><img src="./photo/profile.png" height="40px" width="40px" class="holder"></div>
+    </nav>
+
+    <div class="game1">
+        <table class="outriders">
+            <tr>
+                <td><b>OUTRIDERS-249</b></td>
+            </tr>
+            <tr>
+                <td>Is a 1-3 Multiplayer co-op RPG shooter set in on <br>
+                    original dark and desperate sci-fi universe. As <br>
+                    mankind bleeds out in the trenches of Enoh, you'll<br>
+                    create your own Outrider and embark on a dangerous<br>
+                    journey across the unknown planet.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="outdown"><p class="outtext">Download</p></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div class="first_div">
+        <table class="allgame1">
+            <tr>
+                <td class="allgame2">Popular Games</td>
+                <td class="allgame"><a href="#" style="text-decoration: none;"><p>See More</p></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="controldiv">
+        <table class="control">
+            <tr>
+                
+                <td><div class="Popular"><a href="#"><img src="./photo/control.png"></a></div></td>
+                <td><div class="Popular"><a href="#"><img src="./photo/horizon_forbidden_west.jpeg" width="480" height="270"></a></div></td>
+                <td><div class="Popular"><a href="#"><img src="./photo/god of war - Copy.png"></a></div></td>
+            
+            </tr>
+
+            <tr>
+                <td><div class="Popular"><a href="#"><img src="./photo/genshin.jpg" width="480" height="270"></a></div></td>
+                <td><div class="Popular"><a href="#"><img src="./photo/far_cry_5.jpg" width="480" height="270"></a></div></td>
+                <td><div class="Popular"><a href="#"><img src="./photo/forza_5.jpg" width="480" height="270"></a></div></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="first_div">
+        <p class="cat">Categories</p>
+    </div>
+
+    <div class="container">
+        <div class="Action">
+            <article class="ar1">
+                <table>
+                    <tr>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                                <img class="image" src="./photo/god of war.png" alt="Image 1">
+                                <img class="image" src="./photo/horizon.png" alt="Image 2">
+                                <img class="image" src="./photo/Devil_May_Cry_5_Logo.png" alt="Image 3">
+                                <img class="image" src="./photo/sekiro.png" alt="Image 3">
+                                <img class="image" src="./photo/valhalla.png" alt="Image 3">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Horror</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                                <img class="image" src="./photo/alan-wake-2.jpg" alt="Image 1">
+                                <img class="image" src="./photo/outlast.png" alt="Image 2">
+                                <img class="image" src="./photo/resident_village.png" alt="Image 2">
+                                <img class="image" src="./photo/the_last_of_us.png" alt="Image 2">
+                                <img class="image" src="./photo/homesweethome.png" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>RPG</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                                <img class="image" src="./photo/mhw.jpg" alt="Image 1">
+                                <img class="image" src="./photo/nier_automata.jpg" alt="Image 2">
+                                <img class="image" src="./photo/diablo4.png" alt="Image 2">
+                                <img class="image" src="./photo/cyberpunk.jpg" alt="Image 2">
+                                <img class="image" src="./photo/eldenring.jpg" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Survival</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                                <img class="image" src="./photo/minecraft.png" alt="Image 1">
+                                <img class="image" src="./photo/no_man's_sky.jpg" alt="Image 2">
+                                <img class="image" src="./photo/palworld.jpg" alt="Image 2">
+                                <img class="image" src="./photo/DayZ.jpg" alt="Image 2">
+                                <img class="image" src="./photo/rust.jpg" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        
+    </div>
+    <div class="container2">
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Shooter</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                            <img class="image" src="./photo/far_cry_4.jpg" alt="Image 1">
+                            <img class="image" src="./photo/far_cry_5.jpg" alt="Image 2">
+                            <img class="image" src="./photo/far_cry_6.jpg" alt="Image 2">
+                            <img class="image" src="./photo/cod_warzone.jpg" alt="Image 2">
+                            <img class="image" src="./photo/pubg.jpg" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    
+
+    
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Racing</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                            <img class="image" src="./photo/forza_5.jpg" alt="Image 1">
+                            <img class="image" src="./photo/need_for_speed_heat.jpg" alt="Image 2">
+                            <img class="image" src="./photo/rally.png" alt="Image 2">
+                            <img class="image" src="./photo/the_crew_mortor_feast.png" alt="Image 2">
+                            <img class="image" src="./photo/nfs_unbound.jpg" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Adventure</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                            <img class="image" src="./photo/stray.jpg" alt="Image 1">
+                            <img class="image" src="./photo/hogwart.jpg" alt="Image 2">
+                            <img class="image" src="./photo/star_field.jpg" alt="Image 2">
+                            <img class="image" src="./photo/bioshock.jpg" alt="Image 2">
+                            <img class="image" src="./photo/life_is_strange.png" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+
+        <div class="horror">
+            <article class="ar2">
+                <table>
+                    <tr>
+                        <th>Anime</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#">
+                            <div id="container">
+                            <img class="image" src="./photo/genshin.jpg" alt="Image 1">
+                            <img class="image" src="./photo/honkai.jpg" alt="Image 2">
+                            <img class="image" src="./photo/star_rail.jpg" alt="Image 2">
+                            <img class="image" src="./photo/pgr.jpg" alt="Image 2">
+                            <img class="image" src="./photo/zzz.jpg" alt="Image 2">
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
