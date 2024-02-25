@@ -6,8 +6,8 @@
     <style>
         body {
             font-family: 'PS', sans-serif;  
-            margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
+            margin: 0; 
+            padding: 0; 
             background-color: black;
         }
 
@@ -17,8 +17,8 @@
 
         .wrap {
             background-color: rgb(0, 0, 0);
-            flex: 1; /* Take remaining space */
-            padding: 20px; /* Add padding for better appearance */
+            flex: 1; 
+            padding: 20px; 
         }
 
         .downwrap article {
@@ -44,7 +44,7 @@
         }
 
         .info {
-            /* Add padding for better appearance */
+            
             background-color: rgb(0, 0, 0);
             color: white;
             font-size: 14px;
@@ -63,6 +63,35 @@
         }
         .moreinfo {
             background-color: black;
+        }
+        .des {
+            color: white;
+            text-align: center;
+            
+        }
+        .desc {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+        progress {
+            padding-left: 20px;
+        }
+        .rating {
+            padding-left: 20px;
+        }
+        .rating_table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h4 {
+            color: white;
+            text-align: center;
+        }
+        .footer {
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
         }
     </style>
 </head>
@@ -120,8 +149,42 @@
            
         </div>
     </div>
-    
-        <p>haha</p>
-    
+    <video src="../photo/"></video>
+    <hr>
+    <p class="des">Description</p>
+    <hr>
+    <p class="desc">God of War Ragnarök is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It was released worldwide on November 9, 2022, for both the PlayStation 4 and PlayStation 5, marking the first cross-gen release in the God of War series. It is the ninth installment in the series,
+         the ninth chronologically, and the sequel to 2018's God of War. Loosely based on Norse mythology, the game is set in ancient Scandinavia and features series protagonist, Kratos, and his now teenage son, Atreus. Concluding the Norse era of the series, the game covers Ragnarök, the eschatological event which is central to Norse 
+         mythology and was foretold to happen in the previous game after Kratos killed the Aesir god Baldur.</p>
+    <hr>
+<h4>Ratings</h4>
+<hr>
+    <table class="rating_table">
+        <tr>
+            <td><p class="des">5 star</p></td>
+            <td class="rating"><progress class="rating" max="100" value="90"></progress></td>
+        </tr>
+        <tr>
+            <td><p class="des">4 star</p></td>
+            <td class="rating"><progress class="rating" max="100" value="70"></progress></td>
+        </tr>
+        <tr>
+            <td><p class="des">3 star</p></td>
+            <td class="rating"><progress class="rating" max="100" value="10"></progress></td>
+        </tr>
+        <tr>
+            <td><p class="des">2 star</p></td>
+            <td class="rating"><progress class="rating" max="100" value="5"></progress></td>
+        </tr>
+        <tr>
+            <td><p class="des">5 star</p></td>
+            <td class="rating"><progress class="rating" max="100" value="2"></progress></td>
+        </tr>
+        
+    </table>
+    <hr>
+    <footer class="footer">
+        <p>Copyright&copy;2024 GameStore Nyan Min Htet</p>
+    </footer>
 </body>
 </html>
