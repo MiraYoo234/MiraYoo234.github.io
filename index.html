@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message for You</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .title {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff4c3b;
+        }
+        .hidden-message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #ff6f61;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">A Special Message for You</div>
+        <button class="button" onclick="revealMessage()">Click to Reveal</button>
+        <div class="hidden-message" id="hiddenMessage">I love you</div>
+    </div>
+    <script>
+        function revealMessage() {
+            document.getElementById('hiddenMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
