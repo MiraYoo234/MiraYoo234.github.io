@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    color: #03a9f4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Register Page Styles */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form-box {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #e0e0e0;
+}
+
+.input-group input:focus {
+    border-color: #03a9f4;
+    outline: none;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 15px;
+    background-color: #03a9f4;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #0288d1;
+}
+
+.login-redirect {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #222;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222; /* Dark background */
+    color: white;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+}
