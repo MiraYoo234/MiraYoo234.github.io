@@ -1,0 +1,166 @@
+/* editpost.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #1e3a8a; /* Deep blue for header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Form Card Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Full view height minus header */
+    padding: 20px;
+}
+
+.form-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 700px; /* Increased max width */
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1e40af; /* Blue for headings */
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px; /* Reduced margin to keep spacing tight */
+    color: #1d4ed8; /* Light blue for labels */
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin-bottom: 25px; /* Increased margin between elements */
+    border-radius: 8px;
+    border: 1px solid #cbd5e1; /* Light gray border */
+    background-color: #f1f5f9;
+    font-size: 16px;
+    color: #0f172a;
+}
+
+input[type="text"]:focus, textarea:focus, select:focus {
+    border-color: #1d4ed8; /* Blue border focus */
+    outline: none;
+}
+
+textarea {
+    height: 160px;
+    resize: none;
+}
+
+/* Buttons Styling */
+button {
+    background-color: #1e40af; /* Blue button */
+    color: white;
+    padding: 14px 22px; /* Slightly increased padding */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1d4ed8; /* Lighter blue on hover */
+}
+
+.cancel-btn {
+    display: block;
+    margin-top: 25px; /* Increased space between button and cancel link */
+    text-align: center;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cancel-btn:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons img {
+    margin: 0 5px;
+}
+
+/* Added spacing between inputs and other elements to prevent overlap */
+input, textarea, select, button {
+    display: block;
+}
